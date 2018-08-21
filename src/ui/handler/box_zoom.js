@@ -1,3 +1,4 @@
+
 // @flow
 
 import DOM from '../../util/dom';
@@ -9,8 +10,8 @@ import { Event } from '../../util/evented';
 import type Map from '../map';
 
 /**
- * The `BoxZoomHandler` allows the user to zoom the map to fit within a bounding box.
- * The bounding box is defined by clicking and holding `shift` while dragging the cursor.
+ * BoxZoomHandler允许使用者缩放地图来适应边界框。
+ * 边界框通过拖动光标时单击并按住`shift`被定义。
  */
 class BoxZoomHandler {
     _map: Map;
@@ -42,25 +43,25 @@ class BoxZoomHandler {
     }
 
     /**
-     * Returns a Boolean indicating whether the "box zoom" interaction is enabled.
+     * 返回一个布尔值来指示"box zoom"交互是否被启用。
      *
-     * @returns {boolean} `true` if the "box zoom" interaction is enabled.
+     * @returns {boolean} `true`如果"box zoom"交互被启用。
      */
     isEnabled() {
         return !!this._enabled;
     }
 
     /**
-     * Returns a Boolean indicating whether the "box zoom" interaction is active, i.e. currently being used.
+     * 返回一个布尔值，指示"box zoom"交互是否是活动的，即当前正在使用。
      *
-     * @returns {boolean} `true` if the "box zoom" interaction is active.
+     * @returns {boolean} `true` 如果 "box zoom" 交互是活动的。
      */
     isActive() {
         return !!this._active;
     }
 
     /**
-     * Enables the "box zoom" interaction.
+     * 启用 "box zoom" 交互。
      *
      * @example
      *   map.boxZoom.enable();
@@ -71,7 +72,7 @@ class BoxZoomHandler {
     }
 
     /**
-     * Disables the "box zoom" interaction.
+     * 禁用 "box zoom" 交互。
      *
      * @example
      *   map.boxZoom.disable();
