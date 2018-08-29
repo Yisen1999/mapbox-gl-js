@@ -9,7 +9,7 @@ import { Event } from '../../util/evented';
 import type Map from '../map';
 
 /**
- *  BoxZoomHandler允许使用者缩放地图来适应边界框
+ *  BoxZoomHandler允许使用者缩放地图来适应边界框。
  *  边界框通过拖动光标时单击并按住`shift`被定义。
  */
 class BoxZoomHandler {
